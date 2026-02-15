@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design System Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=VT323&display=swap" rel="stylesheet">
+    
     <style>
         /* CSS Reset and Base Styles */
         :root {
@@ -20,8 +25,8 @@
             --color-text-light: white;
 
             /* Typography */
-            --font-primary: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-secondary: 'Roboto Mono', monospace;
+            --font-primary: "Audiowide", sans-serif;
+            --font-secondary: "VT323", monospace;
 
             /* Spacing System */
             --spacing-xs: 0.25rem;
@@ -43,7 +48,7 @@
         }
 
         body {
-            font-family: var(--font-primary);
+            font-family: var(--font-secondary);
             line-height: 1.6;
             background-color: var(--color-background);
             color: var(--color-text-dark);
@@ -57,33 +62,36 @@
 
         /* Typography Styles */
         h1 {
-            font-size: 3rem;
+            font-family: var(--font-primary);
+            font-size: 3.5rem;
             font-weight: 700;
             margin-bottom: var(--spacing-md);
             color: var(--color-primary);
         }
 
         h2 {
-            font-size: 2rem;
+            font-family: var(--font-primary);
+            font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: var(--spacing-md);
             color: var(--color-secondary);
         }
 
         h3 {
-            font-size: 1.5rem;
+            font-family: var(--font-secondary);
+            font-size: 2rem;
             font-weight: 500;
             margin-bottom: var(--spacing-sm);
             color: var(--color-accent);
         }
 
         .body-text {
-            font-size: 1rem;
+            font-size: 1.5rem;
             margin-bottom: var(--spacing-md);
         }
 
         .small-text {
-            font-size: 0.75rem;
+            font-size: 1.25rem;
             color: color-mix(in srgb, var(--color-text-dark) 70%, transparent);
         }
 
